@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            num = prompt("Digite um número: \n(para sair digite SAIR)")
+            vet = [num]
+
+            while (num != "SAIR"){
+                num = prompt("Digite um número: \n(para sair digite SAIR)")
+                vet.push(num)
+            }
+
+            vet.sort((a, b) => a - b);
+
+            if (num == "SAIR") {
+                console.log(vet)
+            }
+            
+        </script>
+    </body>
+</html>
